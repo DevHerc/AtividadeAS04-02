@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Pico",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${userHome}/.pico-sdk/sdk/2.1.0/**",  // Caminho do SDK do Raspberry Pi Pico
+                "${workspaceFolder}/lib/FastLED-master",   // Caminho da biblioteca FastLED
+                "${workspaceFolder}/lib/Adafruit_SSD1306-master",  // Caminho da biblioteca Adafruit SSD1306
+                "${workspaceFolder}/lib/Adafruit-GFX-Library-master"  // Caminho da biblioteca Adafruit GFX
+            ],
+            "forcedInclude": [
+                "${userHome}/.pico-sdk/sdk/2.1.0/src/common/pico_base_headers/include/pico.h",
+                "${workspaceFolder}/build/generated/pico_base/pico/config_autogen.h"  // Remover se o arquivo não existir
+            ],
+            "defines": [],
+            "compilerPath": "${userHome}/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc.exe",  // Caminho do compilador
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${userHome}/.pico-sdk/sdk/2.1.0/**",  // Caminho do SDK do Raspberry Pi Pico
+                    "${workspaceFolder}/lib/FastLED-master",   // Caminho da biblioteca FastLED
+                    "${workspaceFolder}/lib/Adafruit_SSD1306-master",  // Caminho da biblioteca Adafruit SSD1306
+                    "${workspaceFolder}/lib/Adafruit-GFX-Library-master"  // Caminho da biblioteca Adafruit GFX
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
