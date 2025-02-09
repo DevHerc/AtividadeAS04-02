@@ -106,9 +106,9 @@ void desenho_pio(double *desenho, double r, double g, double b) {
     for (int i = 0; i < 25; i++) {
         int posicao_fisica = mapa_leds[i];
         if (desenho[i] == 1) {
-            set_pixel_color((uint8_t)(r * 255 * brilho), 
-                            (uint8_t)(g * 255 * brilho), 
-                            (uint8_t)(b * 255 * brilho));
+            set_pixel_color((uint8_t)(r * 80 * brilho), 
+                            (uint8_t)(g * 80 * brilho), 
+                            (uint8_t)(b * 80 * brilho));
         } else {
             set_pixel_color(0, 0, 0); // Apaga o LED
         }
